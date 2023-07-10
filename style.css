@@ -1,0 +1,666 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --text-color: rgb(34 179 193);
+    --background-color: rgb(34 179 193);
+}
+
+header{
+    height: 100vh;
+    background-image: url('https://templatemo.com/templates/templatemo_580_woox_travel/assets/images/banner-04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 0rem;
+    background-color: var(--background-color);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+nav > img{
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 200px;
+    
+}
+
+nav > ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav > ul > li{
+    list-style-type: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 0px 14px;
+}
+
+nav > ul > li:hover{
+    color: aqua;
+}
+
+.bars_icon{
+    display: none;
+}
+
+.bars_icon > i{
+    font-size: 2rem;
+    color: white;
+}
+
+.header_info{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    text-align: center;
+}
+
+.header_info > h2{
+    color: white;
+    font-size: 1.7rem;
+}
+
+.header_info > h1{
+    color: white;
+    font-size: 4rem;
+    margin: 1.5rem 0rem;
+    font-weight: 800;
+}
+
+.header_info > button{
+    border: none;
+    border: 1px solid var(--background-color);
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.header_info > button:hover{
+    color: white;
+    background-color: var(--background-color);
+}
+
+.info_container{
+    width: 80%;
+    background-color: white;
+    border-radius: 80px;
+    padding: 2.3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 73%;
+    left: 50%;
+}
+
+.info_header1{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.info_header2{
+    display: flex;
+    align-items: center;
+    gap: 19rem;
+}
+
+
+.info_info1{
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+
+.info_info1 > i{
+    padding: 1.2rem;
+    border: none;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.inside_header{
+    margin: 0rem 1.5rem;
+    line-height: 1.8rem;
+}
+
+.inside_header > span{
+    font-size: 17px;
+    color: gray;
+}
+
+.inside_header > h1{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.explore_button > button{
+    border: none;
+    background-color: var(--background-color);
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+}
+
+.border_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 50%;
+    gap: 2rem;
+    margin: 2rem 0rem;
+}
+
+.border_info{
+    flex-direction: column;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.border_info > span{
+    color: white;
+}
+
+.number_header > span{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.number_header > span:hover{
+    color: var(--text-color);
+}
+
+.visit_section{
+    height: 100%;
+}
+
+.visit_top{
+    padding: 5rem;
+}
+
+.visit_top > h1{
+    font-size: 2.1rem;
+}
+
+.visit_top > p{
+    color: gray;
+    font-size: 18px;
+    line-height: 1.8rem;
+    margin: 1rem 0rem;
+}
+
+.visit_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.visit_info{
+    width: 80%;
+    margin: 0rem 5rem;
+}
+
+.visit_info > hr{
+    width: 94%;
+}
+
+.middle_article{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.middle_article > img{
+    width: 350px;
+    border-radius: 30px;
+}
+
+.article_holder{
+    margin: 0rem 2rem;
+}
+
+.article_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+}
+
+.top_holder{
+    line-height: 1.9rem;
+}
+
+.top_holder > h1{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.top_holder > span{
+    color: gray;
+    font-size: 17px;
+}
+
+.button_top > button{
+    border: none;
+    background-color: var(--background-color);
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+}
+
+.article_p{
+    margin: 1.5rem 0rem;
+}
+
+.article_p > p{
+    font-size: 18px;
+    color: gray;
+    line-height: 2rem;
+}
+
+.article_p > p > span{
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--text-color);
+}
+
+.article_p > p > span:hover{
+    color:  rgb(49, 0, 128);
+}
+
+.middle_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(225, 225, 225);
+    border-bottom: 1px solid rgb(225, 225, 225);
+    margin: 1.5rem 0rem;
+    padding: 1.5rem 0rem;
+}
+
+.middle_user > i{
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.middle_user > span{
+    font-size: 16px;
+    color: gray;
+    margin: 0px 6px;
+}
+
+.middle_globe > i{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.middle_globe > span{
+    font-size: 16px;
+    color: gray;
+    margin: 0px 6px;
+}
+
+.middle_house > i{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.middle_house > span{
+    font-size: 16px;
+    color: gray;
+    margin: 0px 6px;
+}
+
+.article_bottom{
+    margin: 2.5rem 0rem;
+}
+
+.article_bottom > span{
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.article_bottom > i{
+    color: var(--text-color);
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.page_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    margin-left: 1rem;
+}
+
+.page_info > i{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 0px 10px;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.page_info > i:hover{
+    background-color: var(--background-color);
+    color: white;
+}
+
+.page_info > span{
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 18px;
+    border: 1px solid var(--text-color);
+    margin: 0px 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.page_info > span:hover{
+    background-color: var(--background-color);
+    color: white;
+}
+
+.page_info > span:nth-child(3){
+    background-color: var(--background-color);
+    color: white;
+}
+
+.map_info{
+    width: 45%;
+    height: 120vh;
+}
+
+.map_info > iframe{
+    height: 80vh;
+    width: 500px;
+    border-radius: 25px;
+}
+
+.look_section{
+    height: 100%;
+    background-image: url('https://templatemo.com/templates/templatemo_580_woox_travel/assets/images/banner-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.look_color{
+    background-color: rgba(64, 242, 255, 0.5);
+    height: 100%;
+}
+
+.look_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0rem;
+    width: 85%;
+    margin: auto;
+}
+
+.look_info > h1{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 800;
+}
+
+.look_info > h2{
+    color: white;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+.look_button > button{
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.look_button > button:hover{
+    background-color: white;
+    color: var(--text-color);
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 0rem;    
+    background-color: var(--background-color);
+}
+
+footer > p{
+    font-size: 18px;
+    color: white;
+    line-height: 2rem;
+}
+
+footer > p > span{
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer > p > span:hover{
+    color: rgb(152, 239, 247);
+}
+
+@media only screen and (max-width:1100px){
+    nav > ul{
+        display: none;
+    }
+
+    .bars_icon{
+        display: block;
+    }
+
+    .header_info{
+        padding: 0px 3px;
+    }
+
+    .header_info > h2{
+        font-size: 1.1rem;
+    }
+
+    .header_info > h1{
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+
+    .info_container{
+        width: 95%;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 1rem 0rem;
+        
+    }
+
+    .info_header1{
+        width: 100%;
+        gap: 0rem;
+        padding: 1rem 0rem;
+    }
+
+    .info_header2{
+        width: 100%;
+        gap: 0rem;
+        padding: 1rem 0rem;
+    }
+
+    .info_info1{
+        width: 100%;
+    }
+
+    .info_info1 > i{
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .inside_header{
+        margin: 0px 4px;
+    }
+
+    .inside_header > span{
+        font-size: 14px;
+    }
+
+    .inside_header > h1{
+        font-size: 1rem;
+    }
+
+    .explore_button > button{
+        margin: 0rem 1.5rem;
+        padding: 1rem 3rem;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    .border_header{
+        display: none;
+    }
+
+    .visit_section{
+        width: 100%;
+    }
+
+    .visit_top{
+        padding: 3rem 1rem;
+    }
+
+    .visit_container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .visit_info{
+        width: 100%;
+        flex-direction: column;
+        padding: 0rem 1rem;
+        margin: 0rem;
+    }
+
+    .visit_info > hr{
+        width: 95%;
+        margin: auto;
+    }
+
+    .middle_article{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .middle_article > img{
+        width: 100%;
+    }
+
+    .article_holder{
+        width: 100%;
+        /* padding: 0rem 1rem; */
+    }
+
+    .top_holder > h1{
+        font-size: 1.2rem;
+    }
+
+    .button_top > button{
+        padding: 1rem;
+        font-size: 14px;
+    }
+
+    .middle_user, .middle_globe, .middle_house > i{
+        font-size: 1rem;
+    }
+
+    .middle_user, .middle_globe, .middle_house > span{
+        font-size: 15px;
+    }
+
+    .map_info{
+        width: 100%;
+        padding: 3rem 1rem;
+        height: 100%;
+    }
+
+    .map_info > iframe{
+        height: 80vh;
+        width: 100%;
+    }
+
+    .look_section{
+        width: 100%;
+    }
+
+    .look_container{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .look_info > h1{
+        font-size: 2rem;
+    }
+
+    .look_info > h2{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .look_button{
+        margin: 1rem 0rem;
+    }
+
+}
